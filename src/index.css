@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body {
+  background-color: #000; /* Black background */
+  color: #d4af37; /* Golden text */
+  font-family: "Poppins", sans-serif;
+}
