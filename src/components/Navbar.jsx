@@ -11,10 +11,16 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-black text-[#d4af37] px-6 py-4 flex justify-between items-center shadow-md fixed top-0 left-0 z-50">
       {/* Logo */}
-      <div className="flex items-center gap-3">
+      <Link
+        to="home" // this should match the id of your Hero section
+        smooth={true}
+        duration={500}
+        offset={-80}
+        className="flex items-center gap-3 cursor-pointer"
+      >
         <img src={logo} alt="ShubhVibe Events" className="w-12 h-12" />
         <span className="text-xl font-semibold">ShubhVibe Events</span>
-      </div>
+      </Link>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-6">
