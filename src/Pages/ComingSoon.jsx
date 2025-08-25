@@ -8,7 +8,7 @@ const ComingSoon = () => {
     <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center justify-center text-center px-6">
       <img src={logo} alt="ShubhVibe Events" className="w-56 mb-6 drop-shadow-lg" />
       <h1 className="text-4xl md:text-5xl font-bold text-black">ShubhVibe Events</h1>
-      <p className="mt-3 text-lg md:text-xl italic text-gray-700">From Bhakti to Barat, we make it Divine ✨</p>
+      <p className="mt-3 text-lg md:text-xl italic text-gray-700">From Bhakti to Baaraat, we make it Divine ✨</p>
       <p className="mt-6 text-xl text-[#d4af37]">🌸 Coming Soon 🌸</p>
 
       {/* Buttons */}
