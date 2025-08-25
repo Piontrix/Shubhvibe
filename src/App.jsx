@@ -1,11 +1,34 @@
-import ComingSoon from "./Pages/ComingSoon.jsx";
+import React, { useEffect, useState } from "react";
+import Hero from "./components/Hero";
+import AboutUs from "./components/AboutUs";
+import Services from "./components/Services";
+import Portfolio from "./components/Portfolio";
+import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
+import EnquiryModal from "./components/EnquiryModal";
+import Navbar from "./components/Navbar";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowModal(true), 5000); // popup after 5 sec
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <>
-      {" "}
-      <ComingSoon />
-    </>
+    <div className="bg-white text-gray-900">
+      <Navbar />
+      <div className="pt-20">
+        <Hero />
+        <AboutUs />
+        <Services />
+        <Portfolio />
+        <ContactUs />
+        <Footer />
+        {showModal && <EnquiryModal onClose={() => setShowModal(false)} />}
+      </div>
+    </div>
   );
 }
 
