@@ -53,7 +53,7 @@ const ContactUs = () => {
         />
         <button
           type="submit"
-          className="w-full bg-[#d4af37] text-black font-semibold py-2 rounded hover:bg-black hover:text-[#d4af37] transition"
+          className="w-full bg-[#d4af37] text-black font-semibold py-2 rounded hover:bg-black hover:text-[#d4af37] transition cursor-pointer"
         >
           Submit
         </button>

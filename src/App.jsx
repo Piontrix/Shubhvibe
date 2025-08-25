@@ -7,6 +7,7 @@ import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import EnquiryModal from "./components/EnquiryModal";
 import Navbar from "./components/Navbar";
+import MadeWithLove from "./components/MadeWithLove";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         <Portfolio />
         <ContactUs />
         <Footer />
+        <MadeWithLove />
         {showModal && <EnquiryModal onClose={() => setShowModal(false)} />}
       </div>
     </div>
