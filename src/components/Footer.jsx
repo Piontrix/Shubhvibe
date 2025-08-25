@@ -1,5 +1,6 @@
 import React from "react";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const phone = import.meta.env.VITE_PHONE_NUMBER;
 
@@ -25,7 +26,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="bg-[#25D366] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
         >
-          <MessageCircle size={22} />
+          <FaWhatsapp size={22} />
         </a>
       </div>
     </footer>
