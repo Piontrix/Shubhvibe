@@ -14,15 +14,15 @@ const categories = [
     images: [
       { src: "/images/jagran1.jpg", thumb: "/images/jagran1.jpg" },
       { src: "/images/jagran2.jpg" },
-      { src: "/images/jagran3.jpg" },
+      { src: "/images/jagran3.webp" },
     ],
   },
   {
     name: "Mata Chowki",
     images: [
       { src: "/images/chowki1.jpg", thumb: "/images/chowki1.jpg" },
-      { src: "/images/chowki2.jpg" },
-      { src: "/images/chowki3.jpg" },
+      { src: "/images/chowki2.png" },
+      { src: "/images/chowki3.webp" },
     ],
   },
   {
@@ -30,7 +30,7 @@ const categories = [
     images: [
       { src: "/images/wedding1.jpg", thumb: "/images/wedding1.jpg" },
       { src: "/images/wedding2.jpg" },
-      { src: "/images/wedding3.jpg" },
+      { src: "/images/wedding3.jpeg" },
     ],
   },
 ];
