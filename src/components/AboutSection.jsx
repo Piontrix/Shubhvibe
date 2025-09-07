@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+// Animation variants
 const variants = {
   left: { hidden: { opacity: 0, x: -100 }, show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } } },
   right: { hidden: { opacity: 0, x: 100 }, show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } } },
@@ -52,7 +53,7 @@ const AboutSection = () => {
             src="/images/event2.jpg"
             alt="Stage Decor"
             className="rounded-lg shadow-md object-cover w-full h-48"
-            variants={variants.right}
+            variants={variants.top}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
@@ -61,7 +62,7 @@ const AboutSection = () => {
             src="/images/event3.jpg"
             alt="Lighting Setup"
             className="rounded-lg shadow-md object-cover w-full h-48"
-            variants={variants.left}
+            variants={variants.bottom}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}

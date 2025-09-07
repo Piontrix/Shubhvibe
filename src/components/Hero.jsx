@@ -24,7 +24,7 @@ const Hero = () => {
         <p className="text-lg mb-4 font-light tracking-wide">
           Crafting unforgettable memories with elegance & devotion
         </p>
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+        <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-6">
           Your Moments ✨ <br /> Our Devotion ❤️
         </h1>
         <div className="flex justify-center gap-4">
