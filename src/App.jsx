@@ -8,6 +8,11 @@ import Footer from "./components/Footer";
 import EnquiryModal from "./components/EnquiryModal";
 import Navbar from "./components/Navbar";
 import MadeWithLove from "./components/MadeWithLove";
+import AboutSection from "./components/AboutSection";
+import Statistics from "./components/Statistics";
+import Clients from "./components/Clients";
+import MediaGallery from "./components/MediaGallery";
+import Timeline from "./components/timelineEvents";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -22,9 +27,14 @@ function App() {
       <Navbar />
       <div className="pt-20">
         <Hero />
+        <AboutSection />
         <AboutUs />
+        <Statistics />
         <Services />
         <Portfolio />
+        <Clients />
+        <MediaGallery />
+        <Timeline />
         <ContactUs />
         <Footer />
         <MadeWithLove />
