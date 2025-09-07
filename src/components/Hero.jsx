@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -27,12 +28,12 @@ const Hero = () => {
           Your Moments ✨ <br /> Our Devotion ❤️
         </h1>
         <div className="flex justify-center gap-4">
-          <a
-            href="#contact"
+          <NavLink
+            to="/contact"
             className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400 text-lg font-semibold shadow-lg hover:scale-105 transition cursor-pointer"
           >
             Book Your Event
-          </a>
+          </NavLink>
         </div>
       </motion.div>
     </section>

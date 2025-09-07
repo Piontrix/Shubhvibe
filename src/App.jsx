@@ -1,46 +1,46 @@
 import React, { useEffect, useState } from "react";
-import Hero from "./components/Hero";
-import AboutUs from "./components/AboutUs";
-import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
-import ContactUs from "./components/ContactUs";
-import Footer from "./components/Footer";
-import EnquiryModal from "./components/EnquiryModal";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import MadeWithLove from "./components/MadeWithLove";
-import AboutSection from "./components/AboutSection";
-import Statistics from "./components/Statistics";
-import Clients from "./components/Clients";
-import MediaGallery from "./components/MediaGallery";
-import Timeline from "./components/timelineEvents";
+import EnquiryModal from "./components/EnquiryModal";
+
+// Pages
+import Home from "./pages/Home";
+import AboutPage from "./pages/AboutPage";
+import ExperiencesPage from "./pages/ExperiencesPage";
+import ContactPage from "./pages/ContactPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowModal(true), 5000); // popup after 5 sec
+    const timer = setTimeout(() => setShowModal(true), 5000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="bg-white text-gray-900">
-      <Navbar />
-      <div className="pt-20">
-        <Hero />
-        <AboutSection />
-        <AboutUs />
-        <Statistics />
-        <Services />
-        <Portfolio />
-        <Clients />
-        <MediaGallery />
-        <Timeline />
-        <ContactUs />
-        <Footer />
-        <MadeWithLove />
+    <Router>
+      <div className="flex flex-col min-h-screen bg-gray-100 text-gray-900">
+        <Navbar />
+        <ScrollToTop />
+        <div className="pt-20">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services-portfolio" element={<ExperiencesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </div>
+        {/* Sticky Footer Section */}
+        <div className="mt-auto">
+          <Footer />
+          <MadeWithLove />
+        </div>
         {showModal && <EnquiryModal onClose={() => setShowModal(false)} />}
       </div>
-    </div>
+    </Router>
   );
 }
 

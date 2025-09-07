@@ -67,7 +67,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 pb-20 bg-white">
       <h2 className="text-3xl font-bold text-center mb-12 text-[#d4af37]">Our Journey – Eventalist and Decor</h2>
 
       <div ref={wrapperRef} id="timeline-wrapper" className="relative max-w-4xl mx-auto">
