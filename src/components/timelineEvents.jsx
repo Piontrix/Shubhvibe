@@ -47,11 +47,9 @@ const Timeline = () => {
 
       const wrapperRect = wrapperRef.current.getBoundingClientRect();
       const lastDotRect = lastDotRef.current.getBoundingClientRect();
-
       const windowHeight = window.innerHeight;
-      const totalHeight = lastDotRect.top - wrapperRect.top; // distance till last dot
+      const totalHeight = lastDotRect.top - wrapperRect.top;
 
-      // Scroll progress relative to wrapper
       const scrollProgress = Math.min(
         1,
         Math.max(0, (windowHeight - wrapperRect.top) / (wrapperRect.height + windowHeight))
@@ -71,12 +69,12 @@ const Timeline = () => {
       <h2 className="text-3xl font-bold text-center mb-12 text-[#d4af37]">Our Journey – Eventalist and Decor</h2>
 
       <div ref={wrapperRef} id="timeline-wrapper" className="relative max-w-4xl mx-auto">
-        {/* Full gray line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-300 h-full"></div>
+        {/* Vertical Timeline Line */}
+        <div className="absolute md:left-1/2 left-8 transform -translate-x-1/2 w-1 bg-gray-300 h-full"></div>
 
-        {/* Scroll progress red line */}
+        {/* Scroll Progress Line */}
         <div
-          className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-[#d4af37] transition-all duration-300"
+          className="absolute md:left-1/2 left-8 transform -translate-x-1/2 w-1 bg-[#d4af37] transition-all duration-300"
           style={{ height: `${lineHeight}px` }}
         ></div>
 
@@ -84,10 +82,12 @@ const Timeline = () => {
           {timelineEvents.map((event, index) => (
             <div
               key={index}
-              className={`relative flex items-start ${index % 2 === 0 ? "justify-start" : "justify-end"}`}
+              className={`relative flex flex-col sm:flex-row items-start px-5 ${
+                index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
+              }`}
             >
               {/* Event Card */}
-              <div className="w-1/2 px-6">
+              <div className="w-full sm:w-1/2 px-6">
                 <div className="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
                   <div className="flex items-center gap-2 mb-2">
                     {event.icon}
@@ -103,7 +103,7 @@ const Timeline = () => {
               {/* Timeline Dot */}
               <div
                 ref={index === timelineEvents.length - 1 ? lastDotRef : null}
-                className="absolute left-1/2 transform -translate-x-1/2 bg-white border-2 border-[#d4af37] w-8 h-8 rounded-full flex items-center justify-center"
+                className="absolute md:left-1/2 left-8 transform -translate-x-1/2 bg-white border-2 border-[#d4af37] w-8 h-8 rounded-full flex items-center justify-center"
               >
                 {event.icon}
               </div>

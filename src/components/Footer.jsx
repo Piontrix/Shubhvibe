@@ -10,7 +10,7 @@ const Footer = () => {
       <p>© {new Date().getFullYear()} ShubhVibe Events. All rights reserved.</p>
 
       {/* Floating Call & WhatsApp */}
-      <div className="fixed bottom-6 right-6 flex flex-col gap-3">
+      <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
         {/* Call Button */}
         <a
           href={`tel:+${phone}`}
