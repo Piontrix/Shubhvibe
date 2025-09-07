@@ -3,6 +3,7 @@ import Services from "../components/Services";
 import Portfolio from "../components/Portfolio";
 import Clients from "../components/Clients";
 import MediaGallery from "../components/MediaGallery";
+import ContactUs from "../components/ContactUs";
 
 const ExperiencesPage = () => {
   return (
@@ -11,6 +12,7 @@ const ExperiencesPage = () => {
       <Portfolio />
       <Clients />
       <MediaGallery />
+      <ContactUs />
     </>
   );
 };
