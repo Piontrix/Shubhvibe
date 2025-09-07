@@ -6,11 +6,11 @@ import MadeWithLove from "./components/MadeWithLove";
 import EnquiryModal from "./components/EnquiryModal";
 
 // Pages
-import Home from "./pages/Home";
-import AboutPage from "./pages/AboutPage";
-import ExperiencesPage from "./pages/ExperiencesPage";
-import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
+import Home from "./Pages/Home";
+import AboutPage from "./Pages/AboutPage";
+import ExperiencesPage from "./Pages/ExperiencesPage";
+import ContactPage from "./Pages/ContactPage";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
