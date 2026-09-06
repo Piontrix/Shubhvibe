@@ -5,32 +5,32 @@ const services = [
   {
     title: "Jagran",
     desc: "Spiritual nights filled with devotion, soulful bhajans, and divine atmosphere that bring peace and positivity.",
-    img: "/images/jagran.jpg",
+    img: "/images/jagran1.jpg",
   },
   {
     title: "Mata Chowki",
     desc: "Celebrate with divine blessings of Mata Rani Ji, creating a devotional environment full of energy and grace.",
-    img: "/images/mata-chowki.jpg",
+    img: "/images/chowki1.jpg",
   },
   {
     title: "Khatu Shyam Kirtan",
     desc: "Experience soulful kirtans dedicated to Khatu Shyam Ji, uniting devotees with music, prayers, and devotion.",
-    img: "/images/khatu-shyam.jpg",
+    img: "/images/jagran2.jpg",
   },
   {
     title: "Balaji Kirtan",
     desc: "Invoke divine blessings with powerful Balaji kirtans that fill the atmosphere with energy and positivity.",
-    img: "/images/balaji.jpg",
+    img: "/images/chowki2.png",
   },
   {
     title: "Wedding Events",
     desc: "From décor to planning, make your wedding day truly memorable with seamless arrangements and stunning themes.",
-    img: "/images/wedding.jpg",
+    img: "/images/wedding1.jpg",
   },
   {
     title: "Birthday Parties",
     desc: "Add joy and elegance to birthdays with creative themes, décor, and fun-filled celebrations for all ages.",
-    img: "/images/birthday.jpg",
+    img: "/images/wedding2.jpg",
   },
 ];
 

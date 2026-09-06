@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import MadeWithLove from "./components/MadeWithLove";
+// import MadeWithLove from "./components/MadeWithLove";
 import EnquiryModal from "./components/EnquiryModal";
 
 // Pages
@@ -36,7 +36,7 @@ function App() {
         {/* Sticky Footer Section */}
         <div className="mt-auto">
           <Footer />
-          <MadeWithLove />
+          {/* <MadeWithLove /> */}
         </div>
         {showModal && <EnquiryModal onClose={() => setShowModal(false)} />}
       </div>

@@ -2,13 +2,14 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import logo from "../assets/ShubhVibeLogo.png";
 
 const clients = [
-  { img: "/images/client1.png", name: "Hydro Projects Pvt. Ltd." },
-  { img: "/images/client2.png", name: "Prominent Fibres" },
-  { img: "/images/client3.png", name: "ABC Industries" },
-  { img: "/images/client4.png", name: "XYZ Enterprises" },
-  { img: "/images/client5.png", name: "Global Tech" },
+  { img: logo, name: "Hydro Projects Pvt. Ltd." },
+  { img: logo, name: "Prominent Fibres" },
+  { img: logo, name: "ABC Industries" },
+  { img: logo, name: "XYZ Enterprises" },
+  { img: logo, name: "Global Tech" },
 ];
 
 const Clients = () => {

@@ -2,11 +2,11 @@ import React from "react";
 import { Play } from "lucide-react";
 
 const mediaItems = [
-  { src: "/images/event1.jpg", alt: "Event 1", link: "/images/event1.jpg", isPlayable: false },
-  { src: "/images/event1.jpg", alt: "Event 1", link: "/images/event1.jpg", isPlayable: false },
-  { src: "/images/event2.jpg", alt: "Event 2", link: "https://instagram.com/reel/xyz", isPlayable: true },
-  { src: "/images/event3.jpg", alt: "Event 3", link: "/images/event3.jpg", isPlayable: false },
-  { src: "/images/event4.jpg", alt: "Event 4", link: "https://youtube.com/watch?v=abc", isPlayable: true },
+  { src: "/images/jagran1.jpg", alt: "Jagran event", link: "/images/jagran1.jpg", isPlayable: false },
+  { src: "/images/jagran2.jpg", alt: "Jagran stage", link: "/images/jagran2.jpg", isPlayable: false },
+  { src: "/images/chowki1.jpg", alt: "Mata Chowki event", link: "/images/chowki1.jpg", isPlayable: false },
+  { src: "/images/chowki2.png", alt: "Mata Chowki decor", link: "/images/chowki2.png", isPlayable: false },
+  { src: "/images/wedding1.jpg", alt: "Wedding celebration", link: "/images/wedding1.jpg", isPlayable: false },
 ];
 
 const MediaGallery = () => {

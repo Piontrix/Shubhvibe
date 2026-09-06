@@ -41,7 +41,7 @@ const AboutSection = () => {
         {/* Image Grid */}
         <div className="grid grid-cols-2 gap-4">
           <motion.img
-            src="/images/event1.jpg"
+            src="/images/jagran1.jpg"
             alt="Event Setup"
             className="rounded-lg shadow-md object-cover w-full h-48"
             variants={variants.top}
@@ -50,7 +50,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
           />
           <motion.img
-            src="/images/event2.jpg"
+            src="/images/jagran2.jpg"
             alt="Stage Decor"
             className="rounded-lg shadow-md object-cover w-full h-48"
             variants={variants.top}
@@ -59,7 +59,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
           />
           <motion.img
-            src="/images/event3.jpg"
+            src="/images/chowki1.jpg"
             alt="Lighting Setup"
             className="rounded-lg shadow-md object-cover w-full h-48"
             variants={variants.bottom}
@@ -68,7 +68,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
           />
           <motion.img
-            src="/images/event4.jpg"
+            src="/images/wedding1.jpg"
             alt="Wedding Celebration"
             className="rounded-lg shadow-md object-cover w-full h-48"
             variants={variants.bottom}
